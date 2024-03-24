@@ -10,6 +10,11 @@
     
 
 }
+.logo {
+    width: 200px;
+    height: 100;
+    object-fit: fill;
+}
 
 
 
@@ -53,4 +58,10 @@
     font-weight: 700;
     font-size: 0.875rem;
 
+    
 }
+.newTaskForm button:hover {
+    background: var(--blue-hover);
+    cursor: pointer;
+}
+

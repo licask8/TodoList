@@ -1,5 +1,6 @@
 import styles from './task.module.css'
 import {TbTrash } from 'react-icons/tb'
+import {IconContext  } from 'react-icons'
 import { BsFillCheckCircleFill} from 'react-icons/bs'
 
 export function Task({ task, onDelete, onCompleted }) {
@@ -19,7 +20,7 @@ export function Task({ task, onDelete, onCompleted }) {
             </p>
 
             <button className={styles.deleteButton} onClick={() => onDelete(task.id)} >
-                <TbTrash size={20}/>
+                <TbTrash size={20}  />
             </button>
         </div>
     )

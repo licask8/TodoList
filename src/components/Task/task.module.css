@@ -46,5 +46,12 @@ p.textCompleted {
 .deleteButton {
     background: none;
     border: none;
-    color: var(--gray-300)
+    color: var(--gray-300);
+    cursor: pointer;   
 }
+
+.deleteButton :hover {
+    color: var(--danger)
+}
+
+

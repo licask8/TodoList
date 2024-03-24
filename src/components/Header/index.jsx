@@ -1,7 +1,7 @@
 import styles from './header.module.css';
 import { AiOutlinePlusCircle  } from 'react-icons/ai'
 
-import Logo from '../../assets/logo.svg'
+import Logo from '../../assets/step.png'
 import { useState } from 'react';
 
 
@@ -14,8 +14,13 @@ export function Header( { onAddTask }) {
     function handleSubmit(event) {
     event.preventDefault();
 
-    onAddTask(title);
-    setTitle("");
+        if (title === '') {
+            retun
+        } else {
+
+            onAddTask(title);
+            setTitle("");
+        }
     }
 
     function onChangeTitle(event) {
@@ -25,7 +30,7 @@ export function Header( { onAddTask }) {
 
     return(
         <header className={styles.header}>
-            <img src={Logo} alt="logo" />
+            <img src={Logo} alt="logo" className={styles.logo} />
 
             <form className={styles.newTaskForm} onSubmit={handleSubmit}>
                 <input 
