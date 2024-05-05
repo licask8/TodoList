@@ -15,7 +15,7 @@ export function Header( { onAddTask }) {
     event.preventDefault();
 
         if (title === '') {
-            retun
+            return
         } else {
 
             onAddTask(title);
@@ -34,7 +34,7 @@ export function Header( { onAddTask }) {
 
             <form className={styles.newTaskForm} onSubmit={handleSubmit}>
                 <input 
-                    placeholder='Adicione uma tarefa' 
+                    placeholder='Adicione um step' 
                     onChange={onChangeTitle} 
                     value={title} />
 

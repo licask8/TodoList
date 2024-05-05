@@ -11,7 +11,7 @@ export function Tasks({ tasks, onDelete, onCompleted }) {
         <section className={styles.tasks}>
             <header className={styles.header}>
                 <div>
-                    <p>Tarefas criadas</p>
+                    <p>Steps criados</p>
                     <span>{tasksQuantity}</span>
                 </div>
 
@@ -35,7 +35,7 @@ export function Tasks({ tasks, onDelete, onCompleted }) {
                     <section className={styles.empty}>
                         <TbClipboardText size={50} />
                         <div>
-                            <p>Você ainda não tem tarefas cadastradas</p>
+                            <p>Você ainda não tem step cadastrados</p>
                             <span>Crie tarefas e organize seus items a fazer</span>
                         </div>
                     </section>

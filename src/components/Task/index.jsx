@@ -1,6 +1,5 @@
 import styles from './task.module.css'
 import {TbTrash } from 'react-icons/tb'
-import {IconContext  } from 'react-icons'
 import { BsFillCheckCircleFill} from 'react-icons/bs'
 
 export function Task({ task, onDelete, onCompleted }) {
